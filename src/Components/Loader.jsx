@@ -5,7 +5,7 @@ const Loader = () => {
     <div className=' d-flex flex-column justify-content-center align-items-center'>
       <Spinner animation="border" role="status">
       </Spinner>
-      <p className='text-center fs-2'>Lodaing...</p>
+      <p className='text-center fs-2'>Loading...</p>
     </div>
   )
 }

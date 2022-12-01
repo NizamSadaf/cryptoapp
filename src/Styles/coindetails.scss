@@ -1,0 +1,17 @@
+.coindetails{
+    height: 100vh;
+    >.coindetails-first{
+        background-color: aqua;
+        div{
+            h3{
+                width: fit-content;
+                background-color: black;
+                color: white;
+                padding: 0.1rem;
+            }
+        }
+    }
+    >.coindetails-second{
+        background-color: antiquewhite;
+    }
+}

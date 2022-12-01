@@ -1,0 +1,148 @@
+@import './fonts.scss';
+.home
+{
+  height: 1000px;
+ 
+  .hero{
+    height: 300vh;
+    background: linear-gradient(90deg, rgba(29,253,231,1) 27%, rgba(29,253,231,1) 31%, rgb(69, 192, 252) 100%);
+    >.hero-left{
+      >.image{
+        height: 20rem;
+        width: 100%;
+        margin-top: 2rem;
+        background: url('../assets/1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+      }
+      >.buttons{
+        height: 20vh;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        Button{
+          padding: 1rem;
+          text-transform: uppercase;
+          background-color: transparent;
+          border: 1px solid white;
+          color: black;
+          transition: 0.2s ease-in-out;
+          &:hover{
+            background-color: black;
+            color: white;
+            font-weight: 400;
+            transform: translateY(-5px);
+            
+          }
+        }
+      }
+    }
+    >.hero-right{
+      text-align: justify;
+      line-height: 2rem;
+      font-family: $fonts;
+      color: white;
+      font-size: larger;
+      margin-top: -60rem;
+    }
+   
+}
+  >.service{
+    height: 40rem;
+    background: linear-gradient(90deg, rgba(34,150,232,1) 9%, rgba(29,109,253,1) 40%, rgba(190,69,252,1) 95%);
+    border-radius: 50px;
+    margin-top: -180vh;
+    &::before{
+      content: "Service";
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2rem;
+      color: white;
+      margin-top: 2rem;
+    }
+    >.service-icons{      
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: -10rem;
+      >.icon-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1rem;
+        >.icon{
+          height: 4rem;
+          >svg{
+            width:fit-content;
+            height: 3rem;
+            padding: 0;
+            margin: 0;
+          }
+        }
+        >.icon-title{
+          text-align: center;
+          color: white;
+        }
+      }
+    }
+
+  }
+  >.testimonial{
+    height: 20rem;
+    padding-top: 10rem;
+  }
+}
+@media screen and (min-width:768px) {
+  .home{
+    .hero{
+      height: 190vh;
+      >.hero-right{
+        p{
+          margin-top: 62rem;
+        }
+      }
+    }
+    .service{
+      height: 20rem;
+      margin-top: -120vh;
+      .service-icons{
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    >.testimonial{
+      margin-top: 0;
+    }
+  }
+  
+}
+@media screen and (max-width:500px) {
+  .home{
+    .hero{
+      height: 250vh;
+      >.hero-right{
+        p{
+          margin-top: 10rem;
+        }
+      }
+    }
+    .service{
+      height: 33rem;
+      margin-top: -110vh;
+      .service-icons{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    >.testimonial{
+      margin-top: -8rem;
+    }
+  }
+  
+}
